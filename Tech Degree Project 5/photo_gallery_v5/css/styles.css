@@ -7,16 +7,21 @@
   }
   
   #search {
-    font-size: 1.3em;
-    height: 45px;
+    padding: 12px 20px 12px 10px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    width: 500px;
+    margin: 25px auto 25px auto;
   }
   
   .gallery {
+    max-width: 860px;
     display: grid;
-    width: 1000px;
-    grid-template-columns: repeat(4, 225px);
-    grid-template-rows: repeat(3, 225px);
-    grid-gap: 15px; 
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-content: center;
     margin: 0 auto;
-  }
-  
+    grid-gap: 20px;
+   
+}
